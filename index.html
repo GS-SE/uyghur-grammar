@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uyghur Grammar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            color: #0066cc;
+        }
+        .section-content {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+
+<h1>Uyghur Grammar</h1>
+
+<div class="section">
+    <div class="section-title" onclick="toggleContent('present')">
+        ھازىرقى-كەلگۈسى زامان | Present-Future Tense
+    </div>
+    <div class="section-content" id="present">
+        <p><strong>ئۇيغۇرچە:</strong> بۇ زمان ئىش-ھادىسىلەرنىڭ ھازىر ياكى يېقىن كەلگۈسىدە بولىدىغانلىقىنى بىلدۈرىدۇ.</p>
+        <p><strong>English:</strong> This tense expresses actions that are happening now or in the near future.</p>
+        <p><strong>مىسال:</strong> مەن كىتىۋاتىمەن. (I am going.)</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title" onclick="toggleContent('past')">
+        ئۆتكەن زامان | Past Tense
+    </div>
+    <div class="section-content" id="past">
+        <p><strong>ئۇيغۇرچە:</strong> بۇ زمان بۇرۇن بولغان ئىشلارنى بىلدۈرىدۇ.</p>
+        <p><strong>English:</strong> This tense expresses actions that occurred in the past.</p>
+        <p><strong>مىسال:</strong> ئۇ كەلدۇ. (He came.)</p>
+    </div>
+</div>
+
+<!-- Add more grammar sections here using the same pattern -->
+
+</body>
+</html>
